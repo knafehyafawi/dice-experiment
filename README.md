@@ -12,7 +12,7 @@ Link to the Reddit post: https://www.reddit.com/r/DnD/comments/64fa53/30_sided_d
 ## Method
 
 It would be very easy to build a program to test a hypothetical thirty sided dice. This is faulty. It bakes in the presumption of the null hypothesis (expanded upon later) into the method of testing, which recursively returns the desired output of fairness. It asserts uniformity when the actual dice is not uniform. The idealistic theoretical assumptions abstracted from the geometry of such a dice are baked into the simulation by definition.
-Thus we’ll be 3D modeling in some way. See below.
+Thus we’ll be utilizing 3D data structures in Python. See below.
 
 ### The Toolchain
 
