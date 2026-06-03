@@ -5,7 +5,7 @@ Adnan Awad
 
 ## Preamble
 
-Paraphrasing from Reddit user u/jansenart on r/DnD: A 30-sided dice is not perfectly symmetrical. While they do have 30 equally-sized faces, each vertex has either 5 or 3 connecting faces. This means that if you were to superimpose one face for another, a 6-sided die would fit exactly, but a 30-sided die would only match about half the time. OP then asked, “My question is, does anyone have an actual, trial-based distribution for 30-sided die throws? I'm very interested in seeing exactly how fair one is.” That’s what this experiment attempts to answer.
+Paraphrasing from Reddit user u/jansenart on r/DnD: A 30-sided dice is not perfectly symmetrical. While they do have 30 equally-sized faces, each vertex has either 5 or 3 connecting faces. This means that if you were to superimpose one face for another, a 6-sided die would fit exactly, but a 30-sided die would only match about half the time. For any perfectly symmetrical (platonic solid) die, the frequency distribution ought to be equal across the faces. OP then asked, “My question is, does anyone have an actual, trial-based distribution for 30-sided die throws? I'm very interested in seeing exactly how fair one is.” That’s what this experiment attempts to answer.
 
 Link to the Reddit post: https://www.reddit.com/r/DnD/comments/64fa53/30_sided_die_actual_distribution/
 
@@ -29,6 +29,10 @@ A die in a physics sim is four pieces of data:
 4. Orientation — a quaternion (the physics state). Don't use Euler angles; they'll bite you.
 
 So conceptually: collision uses the triangle mesh; reading the result uses the 30 normals plus the orientation quaternion.
+
+### So what?
+
+Chicken butt. I will not generate the rhombic triacontahedron by convex-hulling golden-ratio coordinates. The rhombic faces are perfectly coplanar quads, and convex-hull algorithms triangulate coplanar points arbitrarily, so the mesh either drops vertices or comes out inconsistent. It's a genuine numerical degeneracy, not a bug we can tune away.
 
 ## Hypothesis
 
