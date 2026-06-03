@@ -19,8 +19,8 @@ Thus we’ll be utilizing 3D data structures in Python. See below.
 ### The Toolchain
 
 - Geometry — build the rhombic triacontahedron mesh. Use trimesh. You hand it the 32 vertices, it computes the convex hull (a watertight mesh) and — crucially — the volume, center of mass, and inertia tensor assuming uniform density.
-- Physics — drop it and let it settle. Use PyBullet (pip install pybullet; C++ under the hood, Python bindings, fast enough for millions of rolls). MuJoCo (pip install mujoco) is the alternative — better physics, steeper learning curve. For a portfolio project PyBullet is the pragmatic pick.
-- Stats/viz — your chi-square machinery from before, now consuming emergent frequencies instead of stipulated ones.
+- Physics — drop it and let it settle. Use PyBullet (pip install pybullet; C++ under the hood, Python bindings, fast enough for millions of rolls).
+- Stats/viz — your chi-square machinery, now consuming emergent frequencies instead of stipulated ones.
 
 ### The Data-Structure Model
 
