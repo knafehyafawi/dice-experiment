@@ -18,7 +18,7 @@ Thus we’ll be 3D modeling in some way. See below.
 - Physics — drop it and let it settle. Use PyBullet (pip install pybullet; C++ under the hood, Python bindings, fast enough for millions of rolls). MuJoCo (pip install mujoco) is the alternative — better physics, steeper learning curve. For a portfolio project PyBullet is the pragmatic pick.
 - Stats/viz — your chi-square machinery from before, now consuming emergent frequencies instead of stipulated ones.
 
-#### The Data-Structure Model
+### The Data-Structure Model
 
 A die in a physics sim is four pieces of data:
 1. Vertex list — an array of 3D points. The RT has 32.
