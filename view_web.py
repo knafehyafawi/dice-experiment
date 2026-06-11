@@ -1,6 +1,6 @@
 """
 view_web.py — view the d30 in a smooth, GPU-accelerated WebGL window,
-generated entirely from your own code (same three.js tech viewstl uses).
+generated similar to what three.js tech viewstl uses.
 
     python view_web.py        # writes d30_view.html and opens it in your browser
 
