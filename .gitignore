@@ -1,0 +1,7 @@
+.idea/
+.venv/
+__pycache__/
+*.pyc
+outputs/
+d30_view.html
+d30_render.png
